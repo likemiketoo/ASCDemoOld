@@ -1,0 +1,35 @@
+html
+{
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body
+{
+    max-width: cover;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-brand
+{
+  background-image: url("https://photos-1.dropbox.com/t/2/AADFWnPcOWJykBbGnDyOVl_ssOX6Q6t6U4i4rrbkL4Vu5w/12/352759491/png/32x32/3/1500022800/0/2/AllStarCode_logo-02.png/EKLB8bkFGLoyIAcoBw/84_24UOUFY3YDyiT7PzszewdEd70t5hZycLhtIk2Yh0?dl=0&size=2048x1536&size_mode=3");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+}
+
+.Demos1
+{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: cover;
+    height: 200px;
+    font-size: 35px;
+    padding: 80px;
+    letter-spacing: 5px;
+    border: 1px solid red;
+}
