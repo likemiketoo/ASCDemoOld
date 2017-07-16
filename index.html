@@ -15,8 +15,8 @@
     <!--CSS-->
     <link href="/css/style.css" rel="stylesheet">
     
-    <!--ASC Font-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
     <!--Title-->
     <title>ASC Demo Showcase</title>
@@ -58,16 +58,67 @@
         </div>
     </nav>
 </head>
-<body>
-    <div class="Demos1">
-        2016 ASC Demo Presentations
-        <!--        <a href="#" class="Demo2016">2016 ASC Demo Presentation</a>-->
-    </div>
-
-</body>
+<body> 
     
-    <!--jquery-->    
+    <!--Demo Year Sections-->
+    
+    <a href="#" style="text-decoration: none">
+        <div class="YearOuterDiv">
+               <div class="Demo2015Image">
+                   <div class="Demos1">
+                       2015 ASC Demo Presentations
+                   </div>
+              </div>
+        </div>
+    </a>
+    
+    <a href="#" style="text-decoration: none">
+        <div class="YearOuterDiv">
+               <div class="Demo2016Image">
+                   <div class="Demos1">
+                       2016 ASC Demo Presentations
+                   </div>
+              </div>
+        </div>
+    </a>
+    
+    <a href="#" style="text-decoration: none">
+        <div class="YearOuterDiv">
+               <div class="Demo2017Image">
+                   <div class="Demos1">
+                       2017 ASC Demo Presentations
+                   </div>
+              </div>
+        </div>
+    </a>
+
+    <!--jquery   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <script>
+    //Array of images which you want to show: Use path you want.
+    var images=new Array('Assets/ASCWorkshop.jpg','Assets/codecode.jpg','Assets/MLB1.jpg');
+    var nextimage=0;
+    doSlideshow();
+
+    function doSlideshow()
+    {
+        if(nextimage>=images.length)
+        {
+            nextimage=0;
+        }
+        
+        $('.Demo2016Image')
+        .css('background-image','url("'+images[nextimage++]+'")')
+        setTimeout(doSlideshow,5000);
+        
+    };
+    </script>
+    
+    
+</body>
+    
 </html>

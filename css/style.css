@@ -15,35 +15,45 @@ body
 
 .navbar-brand
 {
-  background-image: url("https://photos-1.dropbox.com/t/2/AADFWnPcOWJykBbGnDyOVl_ssOX6Q6t6U4i4rrbkL4Vu5w/12/352759491/png/32x32/3/1500022800/0/2/AllStarCode_logo-02.png/EKLB8bkFGLoyIAcoBw/84_24UOUFY3YDyiT7PzszewdEd70t5hZycLhtIk2Yh0?dl=0&size=2048x1536&size_mode=3");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 500px;
+    background: url("https://photos-1.dropbox.com/t/2/AADFWnPcOWJykBbGnDyOVl_ssOX6Q6t6U4i4rrbkL4Vu5w/12/352759491/png/32x32/3/1500022800/0/2/AllStarCode_logo-02.png/EKLB8bkFGLoyIAcoBw/84_24UOUFY3YDyiT7PzszewdEd70t5hZycLhtIk2Yh0?dl=0&size=2048x1536&size_mode=3");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    padding: 5px;
+
 }
 
-.OuterDemo1
+.YearOuterDiv
 {
     max-width: cover;
     height: 200px;
     overflow: hidden;
     border: 2px solid green;
+    text-decoration: none;
 }
 
-.DemoPicture1
+/*Background div image*/
+.Demo2015Image
 {
     width: inherit;
     height: inherit;
     background-image: url(/Assets/codecode.jpg);
     background-size: 100%;
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -transition: all 0.3s;
 }
 
-.DemoPicture1:hover
+/*Zooms in slightly on hover*/
+.grow, .Demo2015Image:hover, .Demo2016Image:hover
 {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     transform: scale(1.1);
+    
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -transition: all 0.3s;
 }
 
 .Demos1
@@ -56,7 +66,20 @@ body
     font-size: 30px;
     padding: 70px;
     letter-spacing: 1px;
-    text-decoration: none;
     border: 2px dashed red;
     
 }
+
+.Demo2016Image
+{
+    width: inherit;
+    height: inherit;
+    background-image: url(/Assets/codecode.jpg);
+    background-size: 100%;
+/*    -webkit-transition: all 0.3s;*/
+/*    -moz-transition: all 0.3s;*/
+/*    transition: all 0.3s;*/
+    transition: background-image 1s ease-in;
+    
+}
+
