@@ -7,11 +7,21 @@ html
 
 body
 {
-    background: ;
+    background: #3B3D42;
+    /*max-width: 500px;*/
     max-width: cover;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.selections
+{
+    max-width: inherit;
+    max-height: inherit;
+    margin: 0 auto;
+    
+    
 }
 .navbar
 {
@@ -28,10 +38,10 @@ body
 .navbar-brand
 {
     /*All Star Code Logo*/
-    background-image: url("https://photos-4.dropbox.com/t/2/AABotXqu8LSNONTuGJTXCi2ph5aiRTkowPzkPumgwexSTw/12/352759491/png/32x32/3/1500231600/0/2/AllStarCode_logo-02.png/EKLB8bkFGLoyIAcoBw/84_24UOUFY3YDyiT7PzszewdEd70t5hZycLhtIk2Yh0?dl=0&size=2048x1536&size_mode=3");
+    background-image: url("/Assets/AllStarCode_logo.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 280px;
+    width: 285px;
     padding: 5px;
     /*border: 2px solid blue;*/
 }
@@ -39,6 +49,7 @@ body
 /*Dimentions for all sections*/
 .YearOuterDiv
 {
+    /*max-width: 500px;*/
     max-width: cover;
     height: 200px;
     overflow: hidden;
@@ -53,7 +64,6 @@ body
     height: inherit;
     background-image: url("/Assets/codecode.jpg");
     background-size: 100%;
-    
     transition: background-image 1s ease-in;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -96,9 +106,9 @@ body
     height: inherit;
     text-align: center;
     vertical-align: middle;
-    font-size: 30px;
-    padding: 70px;
+    font-size: 40px;
     letter-spacing: 1px;
+    padding: 70px;
     transition: background 0.4s;
     /*border: 2px dashed red;*/
 }
@@ -107,4 +117,17 @@ body
 {
     background: rgba(0, 0, 0, .05);
     transition: background 0.4s;
+}
+
+@media (max-width: 700px)
+{
+    body
+    {
+        display: block;
+    }
+    .Demos1
+    {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
 }
