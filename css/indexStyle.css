@@ -64,9 +64,12 @@ body
     height: inherit;
     background-image: url("/Assets/codecode.jpg");
     background-size: 100%;
+    background-position: center;
     transition: background-image 1s ease-in;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -90,16 +93,19 @@ body
 {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
     transform: scale(1.1);
     
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    -transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.Demos1
+.Demos, .Demos2015, .Demos2016, .Demos2017, .Demos2018
 {
-    z-index: 1;
     background: rgba(0, 0, 0, 0.4);
     color: white;
     width: inherit;
@@ -109,23 +115,71 @@ body
     font-size: 40px;
     letter-spacing: 1px;
     padding: 70px;
+    
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -ms-transition: background 0.4s;
+    -o-transition: background 0.4s;
     transition: background 0.4s;
+    
+    -webkit-transition: text-shadow 0.2s;
+    -moz-transition: text-shadow 0.2s;
+    -ms-transition: text-shadow 0.2s;
+    -o-transition: text-shadow 0.2s;
+    transition: text-shadow 0.2s;
     /*border: 2px dashed red;*/
 }
 
-.Demos1:hover
+.Demos2015
+{
+    background: rgba(56, 140, 170, 0.5);
+}
+
+.Demos2016
+{
+    background: rgba(122, 101, 165, 0.5);
+}
+
+.Demos2017
+{
+    background: rgba(127, 168, 67, 0.5);
+}
+
+.Demos2018
+{
+    background: rgba(219, 87, 74, 0.5);
+}
+
+.Demos2015:hover, .Demos2016:hover, .Demos2016:hover, .Demos2017:hover, .Demos2018:hover
 {
     background: rgba(0, 0, 0, .05);
+    text-shadow: 2px 2px 8px #666768;
+    
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -ms-transition: background 0.4s;
+    -o-transition: background 0.4s;
     transition: background 0.4s;
+    
+    -webkit-transition: text-shadow 0.2s;
+    -moz-transition: text-shadow 0.2s;
+    -ms-transition: text-shadow 0.2s;
+    -o-transition: text-shadow 0.2s;
+    transition: text-shadow 0.2s;
+    
+    /*
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
+    transition: ;
+    */
 }
 
 @media (max-width: 700px)
 {
-    body
-    {
-        display: block;
-    }
-    .Demos1
+
+    .Demos2015, .Demos2016, .Demos2017, .Demos2018
     {
         font-size: 30px;
         letter-spacing: 1px;
