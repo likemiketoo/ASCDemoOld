@@ -39,10 +39,12 @@ body
 {
     /*All Star Code Logo*/
     background-image: url("/Assets/AllStarCode_logo.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 285px;
-    padding: 5px;
+    width: 210px;
+    margin-left: 15px;
+    padding: 0px;
     /*border: 2px solid blue;*/
 }
 
@@ -58,24 +60,19 @@ body
 }
 
 /*Background div image*/
-.DemoPictures, .Demo2015Image, .Demo2016Image, .Demo2017Image, .Demo2018Image
+.DemoPictures, .Demo2016Image, .Demo2017Image, .Demo2018Image, .DemoFutureImage
 {
     width: inherit;
     height: inherit;
     background-image: url("/Assets/codecode.jpg");
     background-size: 100%;
     background-position: center;
-    transition: background-image 1s ease-in;
+    
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-}
-
-.Demo2015Image
-{
-    background-image: url("http://www.power-living.com/blog/wp-content/uploads/2015/07/AllStarCode_2ndBenefit_TeresaKennedy_PowerLiving_July252015_DSC_9193_72dpiR.jpg");
 }
 
 .Demo2016Image
@@ -88,8 +85,13 @@ body
     background-image: url("/Assets/2017 Demo/CodeBacks.jpg");
 }
 
+.DemoFutureImage
+{
+    background-image: url("http://www.power-living.com/blog/wp-content/uploads/2015/07/AllStarCode_2ndBenefit_TeresaKennedy_PowerLiving_July252015_DSC_9193_72dpiR.jpg");
+}
+
 /*Zooms in slightly on hover*/
-.grow, .Demo2015Image:hover, .Demo2016Image:hover, .Demo2017Image:hover, .Demo2018Image:hover
+.grow, .Demo2016Image:hover, .Demo2017Image:hover, .Demo2018Image:hover, .DemoFutureImage:hover
 {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -104,7 +106,7 @@ body
     transition: all 0.3s;
 }
 
-.Demos, .Demos2015, .Demos2016, .Demos2017, .Demos2018
+.Demos, .Demos2016, .Demos2017, .Demos2018, .DemosFuture
 {
     background: rgba(0, 0, 0, 0.4);
     color: white;
@@ -130,11 +132,6 @@ body
     /*border: 2px dashed red;*/
 }
 
-.Demos2015
-{
-    background: rgba(56, 140, 170, 0.5);
-}
-
 .Demos2016
 {
     background: rgba(122, 101, 165, 0.5);
@@ -150,12 +147,17 @@ body
     background: rgba(219, 87, 74, 0.5);
 }
 
-.Demos2015:hover, .Demos2016:hover, .Demos2016:hover, .Demos2017:hover, .Demos2018:hover
+.DemosFuture
+{
+    background: rgba(56, 140, 170, 0.5);
+}
+
+.Demos2016:hover, .Demos2017:hover, .Demos2018:hover, .DemosFuture:hover
 {
     background: rgba(0, 0, 0, .05);
     text-shadow: 2px 2px 8px #666768;
     
-    -webkit-transition: background 0.4s;
+    -webkit-transition: background 5s;
     -moz-transition: background 0.4s;
     -ms-transition: background 0.4s;
     -o-transition: background 0.4s;
@@ -176,10 +178,11 @@ body
     */
 }
 
+/*Changes font size and spacing for browser resize*/
 @media (max-width: 700px)
 {
 
-    .Demos2015, .Demos2016, .Demos2017, .Demos2018
+    .Demos2015, .Demos2016, .Demos2017, .Demos2018, .DemosFuture
     {
         font-size: 30px;
         letter-spacing: 1px;

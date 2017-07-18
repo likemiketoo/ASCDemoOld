@@ -62,18 +62,8 @@
     </nav>
 </head>
 <body> 
-    
     <!--Demo Year Sections-->
     <div class="selections">
-        <a href="#" style="text-decoration: none">
-            <div class="YearOuterDiv">
-                   <div class="Demo2015Image">
-                       <div class="Demos2015">
-                           2015 ASC Demo Presentations <img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
-                       </div>
-                  </div>
-            </div>
-        </a>
 
         <a href="#" style="text-decoration: none">
             <div class="YearOuterDiv">
@@ -85,7 +75,7 @@
             </div>
         </a>
 
-        <a href="#" style="text-decoration: none">
+        <a href="2017index.html" style="text-decoration: none">
             <div class="YearOuterDiv">
                    <div class="Demo2017Image">
                        <div class="Demos2017">
@@ -99,6 +89,15 @@
             <div class="YearOuterDiv">
                    <div class="Demo2018Image">
                        <div class="Demos2018">
+                           2018 ASC Demo Presentations <img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
+                       </div>
+                  </div>
+            </div>
+        </a>
+        <a href="#" style="text-decoration: none">
+            <div class="YearOuterDiv">
+                   <div class="DemoFutureImage">
+                       <div class="DemosFuture">
                            Future ASC Demo Presentations <img src="/Assets/AsteriskTrans.png" alt="ASC Icon" style="width:30px;height:30px;"/>
                        </div>
                   </div>
@@ -111,65 +110,45 @@
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
+    <!--Image Slideshows-->
     <script>
-    //2015 Picture slideshow, use path you want
-    var images1=new Array("http://www.power-living.com/blog/wp-content/uploads/2015/07/AllStarCode_2ndBenefit_TeresaKennedy_PowerLiving_July252015_DSC_9193_72dpiR.jpg", "http://easthamptonstar.com/sites/default/files/imagecache/600xY/DSC_2861_0.jpg", "https://cdn-images-1.medium.com/max/500/1*c22qwQxoAz9TAcRbvwe2XQ.jpeg");
-    var nextimage1=0;
-    
+        //2016 Picture slideshow, use path you want
+        var images2=new Array("http://boatashoreproductions.com/wp-content/uploads/2014/11/AllStarCode_Workshops1818-e1420468473185.jpg","http://www.allstarcode.org/wp-content/uploads/2016/01/All-Star-Hacks.jpg","http://www.allstarcode.org/wp-content/uploads/2016/07/IMG_2680-1.jpg");
+        var nextimage2=0;
+        doSlideshow2();
 
-    function doSlideshow1()
-    {
-        if(nextimage1>=images1.length)
+        function doSlideshow2()
         {
-            nextimage1=0;
-        }
-        
-        $('.Demo2015Image')
-        .css('background-image','url("'+images1[nextimage1++]+'")');
-        setTimeout(doSlideshow1,5000);
-        
-    };
-    doSlideshow1();
+            if(nextimage2>=images2.length)
+            {
+                nextimage2=0;
+            }
+
+            $('.Demo2016Image')
+            .css('background-image','url("'+images2[nextimage2++]+'")');
+            setTimeout(doSlideshow2,6000);
+
+        };
     </script>
     
     <script>
-    //2016 Picture slideshow, use path you want
-    var images2=new Array("http://boatashoreproductions.com/wp-content/uploads/2014/11/AllStarCode_Workshops1818-e1420468473185.jpg","http://www.allstarcode.org/wp-content/uploads/2016/01/All-Star-Hacks.jpg","http://www.allstarcode.org/wp-content/uploads/2016/07/IMG_2680-1.jpg");
-    var nextimage2=0;
-    doSlideshow2();
+        //2017 Picture slideshow, use path you want
+        var images3=new Array('/Assets/2017 Demo/CodeBacks.jpg', '/Assets/2017 Demo/MLB1.jpg', '/Assets/2017 Demo/Yahoo.jpg');
+        var nextimage3=0;
+        doSlideshow3();
 
-    function doSlideshow2()
-    {
-        if(nextimage2>=images2.length)
+        function doSlideshow3()
         {
-            nextimage2=0;
-        }
-        
-        $('.Demo2016Image')
-        .css('background-image','url("'+images2[nextimage2++]+'")');
-        setTimeout(doSlideshow2,6000);
-        
-    };
-    </script>
-    
-    <script>
-    //2017 Picture slideshow, use path you want
-    var images3=new Array('/Assets/2017 Demo/CodeBacks.jpg', '/Assets/2017 Demo/MLB1.jpg', '/Assets/2017 Demo/Yahoo.jpg');
-    var nextimage3=0;
-    doSlideshow3();
+            if(nextimage3>=images3.length)
+            {
+                nextimage3=0;
+            }
 
-    function doSlideshow3()
-    {
-        if(nextimage3>=images3.length)
-        {
-            nextimage3=0;
-        }
-        
-        $('.Demo2017Image')
-        .css('background-image','url("'+images3[nextimage3++]+'")');
-        setTimeout(doSlideshow3,7000);
-        
-    };
+            $('.Demo2017Image')
+            .css('background-image','url("'+images3[nextimage3++]+'")');
+            setTimeout(doSlideshow3,7000);
+
+        };
     </script>
     
 </body>
